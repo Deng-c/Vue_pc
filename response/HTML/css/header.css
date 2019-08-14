@@ -1,0 +1,55 @@
+body{
+  background-image:linear-gradient(to right,#d00d12,#a3000e)
+}
+/* 头部背景颜色 */
+/* .my_header{
+    background-image:linear-gradient(to right,#d00d12,#a3000e)
+} */
+/* 底部导航栏背景颜色 */
+.my_footer{
+    width:100%;
+    background:#fff;
+}
+/* 中 input */
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+  }
+.my_button{
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+}
+.btn-primary {
+    background-color: #d8000f;
+    border:2px solid #fff;
+    border-left:none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #a8000f;
+    border: 2px solid #fff;
+    border-left:none;
+  }
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow:none;
+  }
+/* 右 面包屑导航样式 */
+.breadcrumb-item+.breadcrumb-item::before{
+    content:"|";
+}
+.breadcrumb{
+    background-color:transparent;
+}
+/* 登录字体样式 */
+.my_login_a{
+    font-size:14px;
+    color:#fff;
+    text-align:center;
+}
+.my_login_a:hover{
+    color:#fff;
+    
+}

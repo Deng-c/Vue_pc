@@ -1,0 +1,4 @@
+/* css reset */
+*{margin: 0;padding:0;}
+/* 通用的字体 */
+.my_small{font-size:0.8rem};

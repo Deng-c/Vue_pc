@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美食杰-美食</title>
+    <style>
+        *{margin:0;padding:0;text-decoration: none; }
+        /* 头部 */
+        #header{
+            max-width:100%;
+            height:129px;
+            background-image:linear-gradient(to right,#d00e12,#a3000e);
+            position: relative;
+           
+        }
+        /* 导航栏布局 */
+        .header_a{
+            width:1000px;height:129px;
+            position:relative;
+            margin:0px auto;
+        }
+        /* 头部图片布局 */
+        .header_img{
+            width:184px;height:129px;
+            float:left;
+            background:url(https://s1.c.meishij.net/n/images/logo2.png) -15px 9px no-repeat;
+        }
+        /* 导航栏布局 */
+        .top_navigation{
+            width:430px;height:129px;
+            float:left;
+            position:relative;
+            margin-left:68px;
+        }
+        .top_navigation>input{
+            width:326px;height:16px;
+            position:absolute;
+            top:46px;
+            line-height:16px;
+            overflow: hidden;
+            color:#999;
+            border:2px solid #fff;
+            padding:8px;
+            font-size:12px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        /* 导航栏_搜索提交布局 */
+        .top_navigation>button{ 
+            width:80px;height:36px;
+            color:#fff;
+            position:absolute;
+            top:46px;
+            left:344px;
+            line-height:32px;
+            font-size:14px;
+            border:2px solid #fff;
+            border-top-right-radius:4px;
+            border-bottom-right-radius: 4px;
+            background:#a8000f;
+        }
+        .top_navigation>button:hover{
+            background:#890511;
+        }
+        /* 登录布局 */
+        .login_q_w{
+            position:absolute;
+            width:268px;
+            float:right;
+            vertical-align: top;  
+            left:450px;
+        }
+        /* 登录_qq登录 */
+        .login_img_q{
+            display:block;
+            height:28px;width:28px;
+            position:absolute;
+            top:51px;left:0px;
+            background:url(https://s1.c.meishij.net/n/images/topdsflogin_icon.gif) 3px 0px no-repeat;
+        }
+        .login_qq{
+            display:block;
+            font-size:12px;
+            color:#fff;
+            position:absolute;
+            left:35px;top:51px;
+        }
+        /* 登录_微博登录 */
+        .login_img_w{
+            display:block;
+            height:28px;width:28px;
+            position:absolute;
+            top:51px;left:105px;
+            background:url(https://s1.c.meishij.net/n/images/topdsflogin_icon.gif) 3px -28px no-repeat;
+        }
+        .login_wb{
+            display:block;
+            font-size:12px;
+            color:#fff;
+            position:absolute;
+            left:140px;top:51px;
+        }
+        /* 登录_qq和微博的hover */
+        .login_qq:hover,.login_wb:hover,.login_z:hover,.login_d:hover{
+           text-decoration:underline;
+           transform:scale(1.1);
+        }
+        /* 登录_登录和注册 */
+        .login_z,.login_d{
+            width:32px;
+            display:block;
+            color:#fff;
+            position:absolute;
+            left:210px;top:51px;
+        }
+        .login_d{
+            display:block;
+            position:absolute;
+            left:250px;top:51px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="header_a">
+            <div class="header_img"></div>
+          <div class="top_navigation">
+                <input type="text" placeholder="请输入菜谱/菜单/作者">
+                <button>搜索</button>    
+            <div class="login_q_w"> 
+                <span class="login_span_1">
+                    <a href="#" class="login_img_q"></a>
+                    <a href="#" class="login_qq">QQ登录</a>
+                </span>
+               <span class="login_span_2">
+                    <a href="#" class="login_img_w"></a>
+                    <a href="#" class="login_wb">微博登录</a>
+               </span>
+                <a href="#" class="login_z">注册</a>
+                <a href="#" class="login_d">登录</a>
+            </div>
+          </div>
+        </div>   
+    </div>
+    <div id="main_body">
+        <div class="nav">
+            <a href="#">首页</a>
+            <a href="#">菜谱大全</a>
+            <a href="#">饮食健康</a>
+            <a href="#">美食菜单</a>
+            <a href="#">家居馆</a>
+            <a href="#">美食达人</a>
+            <a href="#">菜谱视频</a>
+            <a href="#">产品下载</a>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

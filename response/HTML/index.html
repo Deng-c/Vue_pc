@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美食杰-美食</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!-- 头部 -->
+<header>
+    <iframe src="header.html" frameborder="0" scrolling="no" class="my_header"></iframe>
+</header>
+<div class="container px-0">
+    <div>
+        <!-- 折叠导航栏 -->
+        <div class="navbar navbar-expand-md navbar-dark my_navbar_color">
+            <a href="javascript:;" class="navbar-brand d-md-none">
+                <strong>欢迎来到美食杰!</strong>
+            </a>
+            <!-- 折叠按钮的激发按钮 -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+                <!-- 三条线 -->
+                <span>☰</span>
+            </button>
+            <!-- 折叠的导航 -->
+
+        <div class="collapse navbar-collapse ">
+            <ul class="nav navbar-nav pr-0">
+                <!-- 导航栏内容 -->
+                <li class="nav-tiem">
+                        <a href="javascript:;" class="nav-link  my_a_hover my_a_active">
+                            <strong>首页</strong>
+                        </a>
+                    </li>
+                <li class="nav-tiem" id="d1">
+                    <a href="#" class="nav-link  my_a_hover" >
+                        <strong>菜谱大全∨</strong>
+                    </a>
+                    <!-- 导航栏下拉详情  -->
+                    <div class="my_navigation_d">
+                    <h5 class="mb-0 my_Navigation_details_h5">家常菜谱</h5>
+                    <ul class="nav">
+                        <li><a class=" my_Navigation_details" href="javascript:;">家常菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">凉菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">素菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">晚餐</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">海鲜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">热菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">私家菜</a></li>
+                        <li><a class="my_Navigation_details mx-2" href="javascript:;">甜品点心</a></li>
+                    </ul>
+                    <h5 class="mb-0 my_Navigation_details_h5">中华菜系</h5>
+                    <ul class="nav">
+                        <li><a class=" my_Navigation_details" href="javascript:;">川菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">粤菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">东北菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">湘菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">鲁菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">浙菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">湖北菜</a></li>
+                        <li><a class="my_Navigation_details mx-2" href="javascript:;">清真菜</a></li>
+                    </ul>
+                    <h5 class="mb-0 my_Navigation_details_h5">各地小吃</h5>
+                    <ul class="nav">
+                        <li><a class=" my_Navigation_details" href="javascript:;">四川小吃</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">广东小吃</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">北京小吃</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">陕西小吃</a></li>
+                    </ul>
+                    <h5 class="mb-0 my_Navigation_details_h5">外国菜系</h5>
+                    <ul class="nav">
+                        <li><a class=" my_Navigation_details" href="javascript:;">韩国料理</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">日本料理</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">法国菜</a></li>
+                        <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">意大利餐</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="nav-tiem"  id="d2">
+                    <a href="#" class="nav-link  my_a_hover" id="d2">
+                        <strong>饮食健康∨</strong>
+                    </a>
+                    <!-- 导航栏下拉详情-->
+                    <div class="my_navigation_d">
+                        <h5 class="mb-0 my_Navigation_details_h5">饮食健康</h5>
+                        <ul class="nav">
+                            <li><a class=" my_Navigation_details" href="javascript:;">饮食小健康</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">美容瘦身</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">食品安全</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">养生妙方</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">饮食禁忌</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">中医保健</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">母婴健康饮食</a></li>
+                            <li><a class="my_Navigation_details mx-2" href="javascript:;">饮食新闻</a></li>
+                        </ul>
+                        <h5 class="mb-0 my_Navigation_details_h5">功能性调理</h5>
+                        <ul class="nav">
+                            <li><a class=" my_Navigation_details" href="javascript:;">清热去火</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">减肥</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">祛痰</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">乌发</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">滋阴补肾</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">健脾开胃</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">消化不良</a></li>
+                            <li><a class="my_Navigation_details mx-2" href="javascript:;">补阳壮阳</a></li>
+                        </ul>
+                        <h5 class="mb-0 my_Navigation_details_h5">疾病调理</h5>
+                        <ul class="nav">
+                            <li><a class=" my_Navigation_details" href="javascript:;">糖尿病</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">高血压</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">胃炎</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">痔疮</a></li>
+                        </ul>
+                        <h5 class="mb-0 my_Navigation_details_h5">脏腑调理</h5>
+                        <ul class="nav">
+                            <li><a class=" my_Navigation_details" href="javascript:;">感冒</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">补肾</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">阳痿早泄</a></li>
+                            <li><a class="px-1 my_Navigation_details mx-2" href="javascript:;">补血</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-tiem">
+                    <a href="#" class="nav-link my_a_hover">
+                        <strong>美食菜单</strong>
+                    </a>
+                </li>
+                <li class="nav-tiem">
+                    <a href="#" class="nav-link my_a_hover">
+                        <strong>家具馆</strong>
+                    </a>
+                </li>
+                <li class="nav-tiem">
+                    <a href="#" class="nav-link my_a_hover">
+                        <strong>美食达人</strong>
+                        <img class="my_cate_img" src="img/footer_header/header_botton.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-tiem">
+                    <a href="#" class="nav-link my_a_hover">
+                        <strong>菜谱视频</strong>
+                    </a>
+                </li>
+                <li class="nav-tiem">
+                    <a href="#" class="nav-link my_a_hover">
+                        <strong>产品下载</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+		</div>		
+    </div>
+    <!-- 大字 -->
+    <!-- 轮播图 -->
+    <div id="demo" class="carousel" data-ride="carousel">
+        <!-- 1.轮播图片 -->
+        <div class="carousel-inner">
+			<!-- 第一张 -->
+            <div class="carousel-item active">
+                <h3 class="text-center m-0 my_carousel_font">今日早餐推荐：宝宝们收下这份爱心早餐吧</h3>
+                <div class="">
+                    <ul class="row mx-0">
+                        <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+                            <a href="#" class="d-block">
+                                <img class="w-100" src="img/slideshow/baobaozaocanbing.jpg" alt="">  
+                            </a>
+                            <div class="w-100 my_lunbotu_div text-left pl-4">
+                                <h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">宝宝早餐饼</a> </h2>
+                                <span class="my_lunbotu_font_span">健康又营养，好吃又抗饿</span>  
+                                <span class="my_lubotu_span px-2 py-1">强身健体</span>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4   px-0 text-center">
+                            <a href="#" class="d-block"> 
+                                <img class="w-100" src="img/slideshow/baobaoshuijingjiao.jpg" alt="">   
+                            </a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+                                <h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">宝宝水晶胶</a> </h2>
+                                <span class="my_lunbotu_font_span">健康自制，特色美味</span>  
+                                <span class="my_lubotu_span px-2 py-1">补脑益智</span>
+                            </div>
+                        </li>
+                        <li  class="col-lg-4 col-md-4  col-sm-4 col-xs-4 px-0 text-center">
+                            <a href="#"  class="d-block"> 
+                                <img class=" w-100" src="img/slideshow/babaozhou.jpg" alt="">
+                            </a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+                                <h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">八宝粥</a> </h2>
+                                <span class="my_lunbotu_font_span">甜鲜可口，营养养胃</span>  
+                                <span class="my_lubotu_span px-2 py-1">养胃消化</span>
+                            </div>
+                        </li>
+                    </ul>      
+                </div>
+			</div>
+			<!-- 第二张 -->
+             <div class="carousel-item">
+                <h3 class="text-center m-0 my_carousel_font">今日午餐推荐：绝味家常菜，拴住你的胃</h3>
+				<div class="">
+                    <ul class="row mx-0">
+                        <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+                            <a href="#" class="d-block">
+                                <img class="w-100" src="img/slideshow/b_boluodugurou.jpg" alt="">  
+                            </a>
+                            <div class="w-100 my_lunbotu_div text-left pl-4">
+                                <h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">菠萝嘟噜肉</a> </h2>
+                                <span class="my_lunbotu_font_span">清新解腻，分分钟搞定</span>  
+                                <span class="my_lubotu_span px-2 py-1">营养均衡</span>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4  px-0 text-center">
+                            <a href="#" class="d-block"> 
+                                <img class="w-100" src="img/slideshow/b_huangguazhudutang.jpg" alt="">   
+                            </a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+                                <h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">莴苣猪肚汤</a> </h2>
+                                <span class="my_lunbotu_font_span">做法简单，汤汁鲜美</span>  
+                                <span class="my_lubotu_span px-2 py-1">补充能量</span>
+                            </div>
+                        </li>
+                        <li  class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+                            <a href="#"  class="d-block"> 
+                                <img class=" w-100" src="img/slideshow/b_youlingqiezi.jpg" alt="">
+                            </a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+                                <h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">油淋茄子</a> </h2>
+                                <span class="my_lunbotu_font_span">清爽开胃，最佳减肥菜</span>  
+                                <span class="my_lubotu_span px-2 py-1">增强抵抗力</span>
+                            </div>
+                        </li>
+                    </ul>      
+                </div>
+			</div>
+			<!-- 第三张 -->
+            <div class="carousel-item ">
+                <h3 class="text-center m-0 my_carousel_font">今日下午茶推荐：DIY下午茶，满满美味与成就感</h3>
+                <div class="">
+					<ul class="row mx-0">
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+							<a href="#" class="d-block">
+								<img class="w-100" src="img/slideshow/c_bocaiyumidangao.jpg" alt="">  
+							</a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+								<h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">菠菜玉米蛋糕</a> </h2>
+								<span class="my_lunbotu_font_span">无油无糖，美味解馋</span>  
+								<span class="my_lubotu_span px-2 py-1">补充热量</span>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4  px-0 text-center">
+							<a href="#" class="d-block"> 
+								<img class="w-100" src="img/slideshow/c_duosemofangnaidong.jpg" alt="">   
+							</a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+								<h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">多色魔方奶冻</a> </h2>
+								<span class="my_lunbotu_font_span">细腻甘甜，健脾开胃</span>  
+								<span class="my_lubotu_span px-2 py-1">润肺清热</span>
+							</div>
+						</li>
+						<li  class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+							<a href="#"  class="d-block"> 
+								<img class=" w-100" src="img/slideshow/c_suannaiguoxibe.jpg" alt="">
+							</a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+								<h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">酸奶果昔杯</a> </h2>
+								<span class="my_lunbotu_font_span">清香甜润，口感超赞</span>  
+								<span class="my_lubotu_span px-2 py-1">补充VC</span>
+							</div>
+						</li>
+					</ul>      
+				</div>
+            </div>
+           <!-- 第四张 -->
+            <div class="carousel-item">
+                <h3 class="text-center m-0 my_carousel_font">今日晚餐推荐：吃小龙虾一时爽，一直吃一直爽</h3>
+				<div class="">
+					<ul class="row mx-0">
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+							<a href="#" class="d-block">
+								<img class="w-100" src="img/slideshow/d_pipixia.jpg" alt="">  
+							</a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+								<h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">香辣皮皮虾</a> </h2>
+								<span class="my_lunbotu_font_span">味道鲜美，分分钟搞定</span>  
+								<span class="my_lubotu_span px-2 py-1">延年益寿</span>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4  px-0 text-center">
+							<a href="#" class="d-block"> 
+								<img class="w-100" src="img/slideshow/d_suanxiangwoju.jpg" alt="">   
+							</a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+								<h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">蒜香莴苣</a> </h2>
+								<span class="my_lunbotu_font_span">好吃又简单，自己在家做</span>  
+								<span class="my_lubotu_span px-2 py-1">健脑益智</span>
+							</div>
+						</li>
+						<li  class="col-lg-4 col-md-4 col-sm-4 col-xs-4 px-0 text-center">
+							<a href="#"  class="d-block"> 
+								<img class=" w-100" src="img/slideshow/d_xiaominanguazhou.jpg" alt="">
+							</a>
+							<div class="w-100 my_lunbotu_div text-left pl-4">
+								<h2 class="mb-0 pt-3"><a href="#" class="my_lubotu_a">小米南瓜粥</a> </h2>
+								<span class="my_lunbotu_font_span">细腻甘甜，健脾开胃</span>  
+								<span class="my_lubotu_span px-2 py-1">润肺清热</span>
+							</div>
+						</li>
+					</ul>      
+				</div>
+            </div>
+            
+        </div>
+        <!-- 轮播指示器 -->
+        <ul class="carousel-indicators mb-0">
+            <li data-target="#demo" data-slide-to="0"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+    </div>
+    <!-- 1L内容 -->
+    <div>
+        <h3 class="text-center py-4 mb-0 my_1L_h3">六月，养心护脑，清补饮食 
+			<a href="javascript:;" class="my_h3_a float-right">更多食材 ></a>
+		</h3>
+		<div class="my_1L p-2">
+            <ul class="row mx-0 mb-0">
+                <li><a href="#d1_1L" class="my_1L_header active">水果</a></li>
+                <li><a href="#d2_1L" class="my_1L_header">蔬菜</a></li>
+                <li><a href="#d3_1L" class="my_1L_header">五谷</a></li>
+                <li><a href="#d4_1L" class="my_1L_header">生鲜</a></li>
+            </ul>
+            
+            <!-- 样式 1 -->
+            <ul class="row mx-0 mb-0 pt-1 c1_1" id="d1_1L">
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_effd9a84a28fe2ef508d4b286df9299_150x150.jpg" alt="">
+                        <span class="my_1L_span">荔枝</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_3884ebf90e667da178d1b7bd8cf62ddf_150x150.jpg" alt="">
+                        <span class="my_1L_span">甜瓜</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_0ff549e81061928347d77e12fbb9edcf_150x150.jpg" alt="">
+                        <span class="my_1L_span">西瓜</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_6084dad456eff7e4de9645b0c0918462_150x150.jpg" alt="">
+                        <span class="my_1L_span">芒果</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img  class="w-100" src="img/1L/1_b28460129149f84ef764b333f2d4469f_150x150.jpg" alt="">
+                        <span class="my_1L_span">樱桃</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_c3010b5c7b4e8581e909d8b874474fb0_150x150.jpg" alt="">
+                        <span class="my_1L_span">桃</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_de95b24631ef8f0022886a5c8d8ffe31_150x150.jpg" alt="">
+                        <span class="my_1L_span">哈密瓜</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/1_4a4f9ea962a0eb60db4d23205f0db6ac_150x150.jpg" alt="">
+                        <span class="my_1L_span">杨梅</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 样式 2 -->
+            <ul class="row mx-0 mb-0 pt-1 c1_1" id="d2_1L">
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_31900af8bf909e61f5982c91313ef665_150x150.jpg" alt="">
+                        <span class="my_1L_span">莴苣</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_46ff26140cddcba66a59ef101bb7a4a0_150x150.jpg" alt="">
+                        <span class="my_1L_span">茄子</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_597ab1da96d8a35458b72ae7ca8ccc27_150x150.jpg" alt="">
+                        <span class="my_1L_span">甜椒</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_5a8562a437374217a483cd333238a72d_150x150.jpg" alt="">
+                        <span class="my_1L_span">丝瓜</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img  class="w-100" src="img/1L/2_5ff27eba123f27615b1c0f0c406a5c27_150x150.jpg" alt="">
+                        <span class="my_1L_span">土头</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_62c149c64a4c9a7a02911650cc50b256_150x150.jpg" alt="">
+                        <span class="my_1L_span">南瓜</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_7f0d129d13145ff6c28e4cb1aec80bc8_150x150.jpg" alt="">
+                        <span class="my_1L_span">四季豆</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/2_a82d115d88dd46598f4333777582469c_150x150.jpg" alt="">
+                        <span class="my_1L_span">西红柿</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 样式 3 -->
+            <ul class="row mx-0 mb-0 p-2 c1_1" id="d3_1L">
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_3eb346efc8d0a9fca2d26ae0a6715d8d_150x150.jpg" alt="">
+                        <span class="my_1L_span">玉米</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_58b3095b7efe444f302b8d0a5adc870d_150x150.jpg" alt="">
+                        <span class="my_1L_span">绿豆</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_5bb1dda5bfa20c2772d81781c4a23f31_150x150.jpg" alt="">
+                        <span class="my_1L_span">燕麦</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_657a17b4201f8a8c81f7ccaf11718543_150x150.jpg" alt="">
+                        <span class="my_1L_span">榛子</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img  class="w-100" src="img/1L/3_8f690769e15fd26ad5184dbfd0140052_150x150.jpg" alt="">
+                        <span class="my_1L_span">红豆</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_989b823c7089812d3d6e468bfc8d8cc3_150x150.jpg" alt="">
+                        <span class="my_1L_span">小米</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_bcb208d4616ac2fc7ff70f7db18391c2_150x150.jpg" alt="">
+                        <span class="my_1L_span">糯米</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/3_f66209c3a00f3847fbe35dca25458e30_150x150.jpg" alt="">
+                        <span class="my_1L_span">松果</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 样式 4 -->
+            <ul class="row mx-0 mb-0 p-2 c1_1" id="d4_1L">
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_0b5100453f24b68ff6ea3b5f3a39ad6a_150x150.jpg" alt="">
+                        <span class="my_1L_span">龙虾</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_1af59099f56158ef054e6ee5888acedf_150x150.jpg" alt="">
+                        <span class="my_1L_span">鸭</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_7a10c9da814c97476b50533fb55a7540_150x150.jpg" alt="">
+                        <span class="my_1L_span">蛤蜊</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_96da0e84e46ee56abbedb73a5457a716_150x150.jpg" alt="">
+                        <span class="my_1L_span">草鱼</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img  class="w-100" src="img/1L/4_a33af27d0cb180dfb0762fc1f5386819_150x150 (2).jpg" alt="">
+                        <span class="my_1L_span">基围虾</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_a33af27d0cb180dfb0762fc1f5386819_150x150.jpg" alt="">
+                        <span class="my_1L_span">鲫鱼</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_d6b288ab3db707acaa04b211035c49a6_150x150.jpg" alt="">
+                        <span class="my_1L_span">蛏子</span>
+                    </a>
+                </li>
+                <li class="col-sm px-1">
+                    <a href="javascript:;" class="my_1L_a">
+                        <img class="w-100" src="img/1L/4_f8e9734997cee28795a756df6fc8e526_150x150.jpg" alt="">
+                        <span class="my_1L_span">鸡腿</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    
+    <!-- 2L内容 -->
+    <div>
+        <h3 class="text-center py-4 mb-0 my_1L_h3">一周热门菜谱推荐
+			<a href="javascript:;" class="my_h3_a float-right">更多菜谱 ></a>
+        </h3>
+        <!-- 第一行 -->
+        <ul class="row mx-0 mb-0">
+            <li class="col px-0 pr-3">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a12381910_156030988976927.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">咸蛋牛轧饼</p>
+                        <p class="mb-0">24评论 71人气</p>
+                        <p class="mb-0">金奇雪蛋黄</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col px-0 pr-3">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a13115739_156041903244059.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">水果果冻</p>
+                        <p class="mb-0">4评论 71人气</p>
+                        <p class="mb-0">丸子美食</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col px-0 pr-3">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a2811207_156072453524429.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">巧克力蛋糕</p>
+                        <p class="mb-0">9评论 127人气</p>
+                        <p class="mb-0">接吻鱼儿</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col px-0">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a410583_156073378771106.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">哈利炒面</p>
+                        <p class="mb-0">6评论 17人气</p>
+                        <p class="mb-0">柔蓝水晶</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!-- 第二行 -->
+        <ul class="row mx-0 mb-0 mt-3">
+            <li class="col px-0 pr-3">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a4367086_156044128604751.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">蒜蓉开边蟹</p>
+                        <p class="mb-0">2评论 21人气</p>
+                        <p class="mb-0">尾巴的厨房</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col px-0 pr-3">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a5446210_156076534480671.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">红烧小鲳鱼</p>
+                        <p class="mb-0">41评论 12人气</p>
+                        <p class="mb-0">牛妈美食</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col px-0 pr-3">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a6092181_156073246132049.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">菠菜海鲜面</p>
+                        <p class="mb-0">5评论 17人气</p>
+                        <p class="mb-0">归家小厨</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+            <li class="col px-0">
+                <a class="my_2L_style" href="javascript:;">
+                    <img class="w-100" src="img/2L/a410583_156073378771106.jpg" alt="">
+                    <div class="p-2 my_2L_div">
+                        <p class="mb-0">哈利炒面</p>
+                        <p class="mb-0">6评论 17人气</p>
+                        <p class="mb-0">柔蓝水晶</p>
+                    </div>
+                    <div>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/1.png" alt=""> 9步 / 大概15分钟</p>
+                        <p class="mb-0 my_2L_p"><img class="my_2L_img" src="./img/2L/2.png" alt=""> 拌 / 咸鲜味</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 3L新闻 -->
+    <div>
+        <h3 class="text-center py-4 mb-0 my_1L_h3">健康饮食
+			<a href="javascript:;" class="my_h3_a float-right">更多健康咨询></a>
+        </h3>
+        <div class="row mx-0 my_3L_height">
+            <div class="col mr-2 px-0">
+                <p class="mb-0 pl-1 py-1 a_11">冻鱼保鲜保营养吗?</p>
+                <p class="mb-0 pl-1 py-1 a_22">哪些啤酒谣言还在飞?</p>
+                <p class="mb-0 pl-1 py-1 a_33">凉拌或油炸四季豆易中毒</p>
+                <img class="w-100  a_1" src="img/3L/a_1.jpg" alt="">
+                <img class="w-100  a_2" src="img/3L/a_2.jpg" alt="">
+                <img class="w-100  a_3" src="img/3L/a_3.jpg" alt="">
+            </div>
+            <div class="col mr-2 px-0">
+                <p class="mb-0 pl-1 py-1 a_11">南方春节食物的寓意</p>
+                <p class="mb-0 pl-1 py-1 a_22">轻食主义到底是什么呢?</p>
+                <p class="mb-0 pl-1 py-1 a_33">腊八除了吃腊八粥还吃？</p>
+                <img class="w-100  a_1" src="img/3L/b_1.jpg" alt="">
+                <img class="w-100  a_2" src="img/3L/b_2.jpg" alt="">
+                <img class="w-100  a_3" src="img/3L/b_3.jpg" alt="">
+            </div>
+            <div class="col mr-2 px-0">
+                <p class="mb-0 pl-1 py-1 a_11">各地优质农产品竞逐！</p>
+                <p class="mb-0 pl-1 py-1 a_22">缺少蛋白质该吃什么？</p>
+                <p class="mb-0 pl-1 py-1 a_33">巅峰对决!</p>
+                <img class="w-100  a_1" src="img/3L/c_1.jpg" alt="">
+                <img class="w-100  a_2" src="img/3L/c_2.jpg" alt="">
+                <img class="w-100  a_3" src="img/3L/c_3.jpg" alt="">
+            </div>
+            <div class="col mr-2 px-0">
+                <p class="mb-0 pl-1 py-1 a_11">贝纳颂咖啡飘香奇!!</p>
+                <p class="mb-0 pl-1 py-1 a_22">康师傅绿茶多元化营销</p>
+                <p class="mb-0 pl-1 py-1 a_33">酱香型白酒就是好酒？！</p>
+                <img class="w-100  a_1" src="img/3L/d_1.jpg" alt="">
+                <img class="w-100  a_2" src="img/3L/d_2.jpg" alt="">
+                <img class="w-100  a_3" src="img/3L/d_3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<footer>
+    <iframe src="footer.html" frameborder="0" scrolling="no" class="my_footer w-100"></iframe>
+</footer>
+</body>
+<script>
+
+</script>
+</html>

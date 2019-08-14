@@ -1,0 +1,60 @@
+body{font-family: helvetica,arial,微软雅黑,华文黑体;}
+/* 媒体查询 */
+@media screen and (min-width:992px){
+  .my-last-ul{text-align:right;}
+  .my-last-ul-2{text-align:left;}
+}
+@media screen and (max-width:991px) and (min-width:769px){
+  .my-last-ul{text-align:right;}
+  .my-last-ul-2{text-align:left;}
+}
+@media screen and (max-width:768px){
+  .my-last-ul{text-align:center;}
+  .my-last-ul-2{text-align:center;}
+}
+/* 上部 */
+.my-color{
+  background-color:#52b7ed;
+  height:48px;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+  content:"|";
+}
+.my-img{text-align:right;}
+.my-ul{justify-content:center;}
+.my-login-1,.my-login{
+  color:#fff;
+  font-size:12px;
+  text-decoration:none !important;
+}
+.my-login-1:hover,.my-login:hover{
+  color:#cfe1ea;
+}
+.my-login-2{
+  width:11px;height:11px;
+  position: relative;
+  bottom:2px;
+}
+/* 下部 */
+li{list-style: none;}
+.my-ul-li{
+  font-size:20px;
+  color:#444444;
+  margin-bottom:16px;
+  font-family: Verdana,Tahoma,Arial;
+}
+.my-ul-li-2{
+  font-size:16px;
+  color:#666666;
+  margin-bottom:36px;
+}
+.my-input,.my-input{
+  width:278px;height:40px;
+  border-radius:3px;
+  padding:10px 0 10px 10px !important;
+  margin-bottom:20px;
+  color:#444444;
+  font-size:16px;
+  border:1px solid #444444;
+  font-family: Verdana,Tahoma,Arial;
+}
